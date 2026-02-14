@@ -2,14 +2,15 @@ import streamlit as st
 import joblib
 import numpy as np
 
+# Load the trained model
+model = joblib.load("model.pkl")
+
 # Set the app title
 st.title("House Price Prediction App")
 
-# Add a visual divider
 st.divider()
 
-# Add a description of the app
-st.write("This app uses machine learning for predicting house price with given features of the house.For this app you can enter the inputs from the UI and use the predict button.")
+st.write("This app uses machine learning for predicting house price with given features of the house. For this app you can enter the inputs from the UI and use the predict button.")
 
 st.divider()
 
